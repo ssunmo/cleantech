@@ -1,676 +1,477 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>(주)클린텍</title>
-    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
-    <link rel="icon" type="image/png" sizes="16x16"  href="/img/favicon-16x16.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-  </head>
-  <body>    
-    <!-- Hero section -->
-    <section id="infinite" class="text-white tm-font-big tm-parallax">
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
-        <div class="container">   
-          <div class="tm-next">
-              <a href="#infinite" class="navbar-brand">(주)클린텍</a>
-          </div>             
-            
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars navbar-toggler-icon"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#infinite">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#whatwedo">회사소개</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#testimonials">사업분야</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#think">경영이념</a>
-              </li> -->
-              <!-- <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#gallery">갤러리</a>
-              </li> -->
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#contact">Contact</a>
-              </li>                    
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link external" href="https://blog.naver.com/cleantechltd" target="_blank" rel="noopener noreferrer">공식 블로그</a>
-              </li>
-            </ul>
-          </div>        
-        </div>
-      </nav>
-      
-      <div class="text-center tm-hero-text-container">
-        <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">(주)클린텍</h2>
-            <p class="tm-hero-subtitle">
-              수처리 전문 기업
-              <br>쿨링타워 및 수조준설, 수처리 약품 공급, 슬러지 여과기 제조
-            </p>
-        </div>        
-      </div>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주식회사 클린텍 - 무중단·무배수 로봇 수중 준설 전문 기업</title>
+    <meta name="description" content="쿨링타워, 폐수처리조, 소방피트, 발전소 취수구 등 물을 비우거나 공장을 멈추지 않는 수중 로봇 준설 서비스 및 독자적 후처리 탈수 여과(케이크화) 시스템 제공.">
+    <meta name="keywords" content="클린텍, 로봇 준설, 수중 준설, 제타크리젠, K3, K5, K6, K7, 쿨링타워 청소, 소방피트 준설, 폐수처리조 준설, 청라 커넬워크, 무중단 준설, 케이크화 여과">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://cleantechltd.co.kr/">
+    <meta property="og:title" content="주식회사 클린텍 - 무중단·무배수 로봇 수중 준설 전문">
+    <meta property="og:description" content="정유공장, 제철소, 발전소, 하천공원까지. 설비 중단 없는 친환경 로봇 준설 기술.">
+    <meta property="og:image" content="assets/hero_background.png">
 
-      <div class="tm-next tm-intro-next">
-        <a href="#whatwedo" class="text-center tm-down-arrow-link">
-          <i class="fas fa-2x fa-arrow-down tm-down-arrow"></i>
-        </a>
-      </div>      
+    <!-- Fonts: Google Fonts Outfit & Noto Sans KR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header id="main-header" class="header-glass">
+        <div class="header-container">
+            <a href="#" class="logo-area" id="header-logo">
+                <img src="assets/logo.png" alt="주식회사 클린텍 로고" class="logo-img" style="height: 36px; width: auto; filter: drop-shadow(0 0 4px rgba(0, 242, 254, 0.2));">
+                <div style="display: flex; flex-direction: column;">
+                    <span class="logo-text-en">CLEAN TECH</span>
+                    <span class="logo-text-ko">주식회사 클린텍</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="nav-menu-container">
+                <a href="#about" class="nav-link">회사 소개</a>
+                <a href="#features" class="nav-link">핵심 역량</a>
+                <a href="#robots" class="nav-link">로봇 라인업</a>
+                <a href="#filtration" class="nav-link">후처리 시스템</a>
+                <a href="#applications" class="nav-link">적용 분야</a>
+                <a href="https://blog.naver.com/cleantechltd" class="nav-link" target="_blank" rel="noopener noreferrer">블로그</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#contact" class="btn-gradient-small" id="nav-cta-btn">상담 문의</a>
+                <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="메뉴 열기">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge fade-in-up">ROBOTIC DREDGING SYSTEM</div>
+                <h1 class="hero-title fade-in-up delay-1">
+                    멈추지 않는 산업의 심장,<br>
+                    <span>수중 로봇 준설</span>로 깨끗하게
+                </h1>
+                <p class="hero-desc fade-in-up delay-2">
+                    정유공장·제철소의 쿨링타워부터 소방피트, 도심 수변공원까지.<br>
+                    설비를 멈추지 않고, 물을 비우지 않으며 독자적인 후처리 여과 기술로 현장을 완벽히 정화합니다.
+                </p>
+                <div class="hero-buttons fade-in-up delay-3">
+                    <a href="#contact" class="btn-primary" id="hero-primary-btn">무료 상담 신청</a>
+                    <a href="#robots" class="btn-secondary" id="hero-secondary-btn">로봇 기술 보기</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>SCROLL DOWN</span>
+        </div>
     </section>
 
-    <section id="whatwedo" class="tm-section-pad-top">
-      
-      <div class="container">
-
-            <div class="row tm-content-box"><!-- first row -->
-                <div class="col-lg-12 col-xl-12">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4 tm-section-title">회사 소개</h2>
-                        <p class="mb-4 tm-intro-text">
-                          <span><b>수처리 전문기업 ㈜클린텍</b></span></br></br>
-                          안녕하세요?</br>
-                          산업 현장에서 방치된 슬러지들은</br>
-                          수위를 높이거나 배수구,필터 등에 침전되어 흐름을 저해하는 등 많은 문제를 일으키고 있습니다.</br></br>
-                          일반적인 방법으로는 이를 효율적으로 제거하기 어렵다보니</br>
-                          많은 현장에서 방치되거나 최소한의 관리만 이루어지는 실정입니다.</br></br>
-
-                          (주)클린텍은 전문 로봇과 약품을 이용하여</br>
-                          현장 곳곳의 직접 처리하기 어려운 슬러지를 처리해 드릴 수 있습니다.</br>
-                          수조를 비우거나 공정을 멈추지 않아도 되며 유해가스 등 환경적인 요인에 좀 더 자유롭습니다.</br>
-                          현장에 폐수처리장이 없더라도 후처리 서비스를 제공하고 있으므로 유연하게 대처할 수 있습니다.</br></br>
-
-                          문제를 일으킬 소지가 있는 슬러지들을 선제적으로 관리하는 것</br>
-                          (주)클린텍과 함께라면 가능합니다.</br></br>
-
-                          폐수처리조, 쿨링타워 등 사람이 직접 처리하기 어려운 현장이 있다면 언제든 문의주십시오.</br>
-                          신속하게 현장답사 및 상담 드리겠습니다.
-                        </p>
-                    </div>
-                </div>
-
-            </div><!-- first row -->
-            
-            <div class="row tm-content-box"><!-- second row -->
-        		<!-- <div class="col-lg-1">
-                    <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">슬러지 준설사업</h2>
-                        <p class="mb-4 tm-intro-text">
-                          로봇을 이용한 수중 준설사업</br>
-                          보다 안전하고 효율적인 준설</br>
-                          냉각탑, 폐수처리조 등</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-1">
-                    <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Fast Support</h2>
-                        <p class="mb-4 tm-intro-text">
-                          Credit goes to <a rel="nofollow" href="https://www.pexels.com">Pexels</a> website for all images used in this template. Cras condimentum mi et sapien dignissim luctus.</p>
-                    </div>
-                </div> -->
-
-            </div><!-- second row -->
-            
-            <div class="row tm-content-box"><!-- third row -->
-        		<!-- <div class="col-lg-1">
-                    <i class="fas fa-3x fa-fingerprint text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Top Security</h2>
-                        <p class="mb-4 tm-intro-text">
-                      You have <strong>no</strong> authority to post this template as a ZIP file on your template collection websites. You can <strong>use</strong> this template for your commercial websites.</p>
-                          
-                          <div class="tm-continue">
-                            <a href="#testimonials" class="tm-intro-text tm-btn-primary">Learn More</a>
+    <!-- About Section -->
+    <section id="about" class="about-section scroll-reveal">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text-content">
+                    <span class="section-subtitle">ABOUT CLEAN TECH</span>
+                    <h2 class="section-title">수중 작업의 위험을 낮추고,<br>산업 효율성을 극대화합니다.</h2>
+                    <p class="section-desc">
+                        기존의 인력 투입형 준설 방식은 질식, 추락 등 위험한 산업 재해의 우려가 매우 높으며, 작업을 위해 대형 설비를 정지하거나 수조의 물을 방류해야만 했습니다. 이로 인한 막대한 비용 손실과 환경 오염은 고스란히 기업의 부담이 되었습니다.
+                    </p>
+                    <p class="section-desc">
+                        <strong>주식회사 클린텍</strong>은 제타크리젠의 수중 원격 제어 로봇(K3, K5, K6, K7)을 전격 도입하여, 사람이 진입 불가능한 고위험 수중 환경에서도 가동 중단 없이 실시간으로 퇴적 슬러지를 흡입·제거하는 혁신을 이끌어냅니다.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feat-item">
+                            <div class="feat-icon-box">
+                                <svg class="feat-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                            </div>
+                            <div class="feat-text">
+                                <h3>안전 우선 (Safety First)</h3>
+                                <p>원격 제어 로봇을 통한 작업자 안전 전면 확보 및 밀폐 공간 재해 방지</p>
+                            </div>
+                        </div>
+                        <div class="about-feat-item">
+                            <div class="feat-icon-box">
+                                <svg class="feat-icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm3.3 15.3L11 13V7h1.5v5.25l3.25 1.95-.76 1.1exportz"/></svg>
+                            </div>
+                            <div class="feat-text">
+                                <h3>비용 절감 (Cost Efficiency)</h3>
+                                <p>설비 비정지 준설로 인한 전력 및 공정 손실 최소화, 비용 획기적 단축</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-1">
-                    <i class="fas fa-3x fa-users text-center tm-icon"></i>
+                <div class="about-visual">
+                    <div class="image-wrapper glow-border">
+                        <img src="assets/robotic_dredging.png" alt="수중 준설 로봇 작업 중" class="visual-img">
+                    </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                      <h2 class="tm-text-primary mb-4">Social Work</h2>
-                        <p class="mb-4 tm-intro-text">
-                      You can change <a href="https://fontawesome.com/icons?d=gallery">Font Awesome icons</a> by either <b><em>fas or far</em></b> in the HTML codes. For Examples:<br>
-                      <em>&lt;i class=&quot;fas fa-users&quot;&gt;&lt;i class=&quot;far fa-chart-bar&quot;&gt;</em> </p>
-                          
-                          <div class="tm-continue">
-                            <a href="#testimonials" class="tm-intro-text tm-btn-primary">Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Advantages Section -->
+    <section id="features" class="advantages-section scroll-reveal">
+        <div class="container text-center">
+            <span class="section-subtitle">CORE COMPETENCIES</span>
+            <h2 class="section-title">클린텍만의 3가지 혁신 기술</h2>
+            <p class="section-intro">수중 슬러지 제거의 패러다임을 바꾸는 원스톱 준설 기술력을 경험하세요.</p>
+            
+            <div class="advantages-grid">
+                <!-- Advantage Card 1 -->
+                <div class="advantage-card card-glass animate-card">
+                    <div class="card-num">01</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm-6 8c0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v-3l4 4-4-4v3c-3.31 0-6-2.69-6-6z"/></svg>
+                    </div>
+                    <h3>무중단 쿨링타워 준설</h3>
+                    <p>정유공장 및 제철소 등 24시간 끊임없이 가동되는 핵심 쿨링타워를 정지하지 않고 상시 준설합니다. 열효율 저하를 즉시 해결하여 경제성을 극대화합니다.</p>
+                </div>
+                
+                <!-- Advantage Card 2 -->
+                <div class="advantage-card card-glass animate-card">
+                    <div class="card-num">02</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm0 14c-2.21 0-4-1.79-4-4 0-2.21 4-6 4-6s4 3.79 4 6c0 2.21-1.79 4-4 4z"/></svg>
+                    </div>
+                    <h3>무배수 소방피트 준설</h3>
+                    <p>재난 대비를 위해 항상 용수를 가득 비워두어야 하는 소방피트 및 밀폐 저수조를 비우지 않고 준설합니다. 용수 폐기로 인한 수자원 낭비와 재배수 비용이 발생하지 않습니다.</p>
+                </div>
+                
+                <!-- Advantage Card 3 -->
+                <div class="advantage-card card-glass animate-card">
+                    <div class="card-num">03</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L1 7l11 5 11-5-11-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>독자적 후처리 탈수 케이크화</h3>
+                    <p>자체 폐수처리장이 없는 현장에서도 클린텍이 직접 개발한 밀폐형 이동식 탈수 차량을 활용해 슬러지를 완전 압착 건조된 케이크 형태로 배출하여 정화 처리합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Robotic Fleet Section (Zetacrizen K-Series) -->
+    <section id="robots" class="robots-section scroll-reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">ROBOTIC FLEET</span>
+                <h2 class="section-title">최첨단 수중 준설 로봇 라인업</h2>
+                <p class="section-intro">제타크리젠의 혁신적인 기술이 탑재된 수중 로봇으로 맞춤형 특수 준설을 보장합니다.</p>
+            </div>
+
+            <!-- Interactive Tab System -->
+            <div class="robot-tabs-wrapper">
+                <div class="robot-tab-buttons" id="robot-tabs">
+                    <button class="tab-btn active" data-robot="k3">CREBO K3</button>
+                    <button class="tab-btn" data-robot="k5">CREBO K5</button>
+                    <button class="tab-btn" data-robot="k6">CREBO K6</button>
+                    <button class="tab-btn" data-robot="k7">CREBO K7</button>
+                </div>
+
+                <div class="robot-tab-content card-glass" id="robot-display">
+                    <!-- Dynamic Tab Content loaded by JS, Fallback for CREBO K3 -->
+                    <div class="robot-detail-grid">
+                        <div class="robot-info">
+                            <div class="robot-badge">Water Tanks & Cooling Towers</div>
+                            <h3 id="robot-name">CREBO K3</h3>
+                            <p class="robot-desc-text" id="robot-desc">
+                                각 트랙에 BLDC 모터가 내장된 고무 트랙 주행 방식을 적용하여 민첩한 수중 이동이 가능합니다. 750mm 폭의 유연한 흡입 헤드를 장착하여 바닥면에 밀착되어 슬러지를 제거합니다. 최대 Ø40mm 크기의 입자까지 막힘없이 통과시키며, 원격 조이스틱 컨트롤러와 LED 조명이 내장된 HD 카메라를 통해 수중 모니터링을 진행하며 정밀 청소 작업을 수행합니다.
+                            </p>
+                            <table class="specs-table">
+                                <tbody>
+                                    <tr>
+                                        <th>주요 적용처</th>
+                                        <td id="spec-use">워터파크 수조, 물탱크, 퇴적물이 비교적 적은 냉각탑 수조</td>
+                                    </tr>
+                                    <tr>
+                                        <th>흡입 능력</th>
+                                        <td id="spec-capacity">최대 22 m³/hr (내장 슬러지 펌프)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>최대 작업 수심</th>
+                                        <td id="spec-depth">20m (기본 케이블 40m)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>제품 사양</th>
+                                        <td id="spec-feature">크기: 920 x 750 x 460 mm | 무게: 75 kg | 작동 전력: 단상 AC 110/220V (2kW)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-                </div> -->
-
-            </div><!-- third row -->
-
-        </div>
-      
-    </section>
-    
-    <section id="testimonials" class="tm-section-pad-top tm-parallax-2">      
-      <div class="container tm-testimonials-content">
-        <div class="row">
-          <div class="col-lg-12 tm-content-box">
-            <h2 class="text-white mb-4 tm-section-title">사업분야</h2>
-            <p class="mb-4 tm-intro-text">
-                (주)클린텍은 수처리 전문 기업으로서 </br>
-                수중 로봇을 이용한 슬러지 준설사업, 슬러지 여과기 제조, 슬러지 후처리, 수처리 약품 공급 등</br>
-                다양한 분야에서 고객의 요구에 맞춘 서비스를 제공하고 있습니다.</br>   </br>
-
-                수처리 관련 문의사항이 있다면 연락주십시오. </br>
-                함께 해결책을 모색해 나가겠습니다.
-              </p>
-            <div class="mx-auto tm-gallery-container tm-gallery-container-2">
-              <div class="tm-testimonials-carousel">
-                <figure class="tm-testimonial-item">
-                  <img src="img/robot.png" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>                          
-                          로봇을 이용한 수중 준설사업</br>
-                          보다 안전하고 효율적인 준설</br>
-                          냉각탑, 폐수처리조 등</p></blockquote>
-                  <figcaption>수중 로봇 준설사업</figcaption>
-                </figure>
-
-                <figure class="tm-testimonial-item">
-                  <img src="img/mc.jpeg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>
-                    슬러지 여과 및 반응장치</br>
-                    슬러지 응집 응결</br>
-                    여과 후 탈수처리</blockquote>
-                  <figcaption>슬러지 여과기</figcaption>
-                </figure>
-
-                <figure class="tm-testimonial-item">
-                  <img src="img/dewatering.png" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>
-                    슬러지 여과 후 물을 분리</br>
-                    탈수 기간 필요</br>
-                    고형폐기물 처리</blockquote>
-                  <figcaption>슬러지 후처리</figcaption>
-                </figure>
-
-                <figure class="tm-testimonial-item">
-                  <img src="img/chemical.jpeg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>
-                    냉각수 관리<br>
-                    보일러수 관리<br>
-                    밀폐계 난방수 관리</blockquote>
-                  <figcaption>수처리 약품공급</figcaption>
-                </figure>
-                
-
-                <!-- <figure class="tm-testimonial-item">
-                  <img src="img/testimonial-img-02.jpg" alt="Image" class="img-fluid mx-auto">
-                  <blockquote>Integer sit amet risus et erat imperdiet finibus. Nam lacus nunc, vulputate id ex eget, euismod auctor augue.</blockquote>
-                  <figcaption>컨설팅</figcaption>
-                </figure> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tm-bg-overlay"></div>
-    </section>
-    
-    <!-- <section id="think" class="tm-section-pad-top">
-      
-      <div class="container">
-
-            <div class="row tm-content-box">
-                <div class="col-lg-12 col-xl-12">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4 tm-section-title">경영 이념</h2>
-                    </div>
-                </div>
-
-            </div>
-            
-            <div class="row tm-content-box">
-        		<div class="col-lg-1">
-                    <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">슬러지 준설사업</h2>
-                        <p class="mb-4 tm-intro-text">
-                          로봇을 이용한 수중 준설사업</br>
-                          보다 안전하고 효율적인 준설</br>
-                          냉각탑, 폐수처리조 등</p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-1">
-                    <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Fast Support</h2>
-                        <p class="mb-4 tm-intro-text">
-                          Credit goes to <a rel="nofollow" href="https://www.pexels.com">Pexels</a> website for all images used in this template. Cras condimentum mi et sapien dignissim luctus.</p>
-                    </div>
-                </div>
-
-            </div>
-            
-            <div class="row tm-content-box">
-        		<div class="col-lg-1">
-                    <i class="fas fa-3x fa-fingerprint text-center tm-icon"></i>
-                </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4">Top Security</h2>
-                        <p class="mb-4 tm-intro-text">
-                      You have <strong>no</strong> authority to post this template as a ZIP file on your template collection websites. You can <strong>use</strong> this template for your commercial websites.</p>
-                          
-                          <div class="tm-continue">
-                            <a href="#testimonials" class="tm-intro-text tm-btn-primary">Learn More</a>
+                        <div class="robot-graphic">
+                            <div class="robot-img-container">
+                                <!-- Blueprint/Graphic representation overlaying robotic image -->
+                                <img src="assets/robot_k3.png" alt="CREBO K3 Robot" class="robot-active-img" id="robot-img">
+                                <div class="scanner-line"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-lg-1">
-                    <i class="fas fa-3x fa-users text-center tm-icon"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post-Treatment Filtration (Cakefication) Section -->
+    <section id="filtration" class="filtration-section scroll-reveal">
+        <div class="container">
+            <div class="filtration-grid">
+                <div class="filtration-visual">
+                    <div class="image-wrapper glow-border-cyan">
+                        <img src="assets/sludge_cake.png" alt="이동식 탈수 여과 시스템 차량" class="visual-img">
+                    </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="tm-intro-text-container">
-                      <h2 class="tm-text-primary mb-4">Social Work</h2>
-                        <p class="mb-4 tm-intro-text">
-                      You can change <a href="https://fontawesome.com/icons?d=gallery">Font Awesome icons</a> by either <b><em>fas or far</em></b> in the HTML codes. For Examples:<br>
-                      <em>&lt;i class=&quot;fas fa-users&quot;&gt;&lt;i class=&quot;far fa-chart-bar&quot;&gt;</em> </p>
-                          
-                          <div class="tm-continue">
-                            <a href="#testimonials" class="tm-intro-text tm-btn-primary">Details</a>
+                <div class="filtration-text">
+                    <span class="section-subtitle">FILTRATION & CAKEFICATION</span>
+                    <h2 class="section-title">자체 개발 이동식 후처리 차량으로<br>폐기물을 압착 탈수하여 신속 배출</h2>
+                    <p class="section-desc">
+                        수중 준설 후 가장 골치 아픈 문제는 바로 흡입한 함수율 90% 이상의 액상 슬러지 처리입니다. 클린텍은 다년간의 축적된 노하우로 자체 제작하여 1톤 탑차 내부에 탑재한 비공개 이동식 후처리 시스템을 현장에 도입합니다.
+                    </p>
+                    <p class="section-desc">
+                        현장 외부로 유출되거나 노출되지 않는 차량 내부 압착 공정을 통해 슬러지를 딱딱한 <strong>슬러지 케이크(Cakefication)</strong>로 즉시 고형화하여 부피를 80% 이상 감소시킵니다.
+                    </p>
+                    <div class="process-steps">
+                        <div class="step-item">
+                            <div class="step-number">01</div>
+                            <div class="step-info">
+                                <h4>고농도 흡입</h4>
+                                <p>Zeta 로봇이 수저 슬러지를 강력하게 흡입</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">02</div>
+                            <div class="step-info">
+                                <h4>이동식 후처리 차량 이송</h4>
+                                <p>외부 노출 없이 탑차 내부의 밀폐형 고효율 탈수 시스템으로 자동 유입</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">03</div>
+                            <div class="step-info">
+                                <h4>케이크화 및 배출</h4>
+                                <p>압착을 통한 고체 케이크화 완료 후 탈수여액은 깨끗하게 방류</p>
+                            </div>
                         </div>
                     </div>
+                    <blockquote class="filtration-note">
+                        대부분의 현장은 자체 폐수처리장이 완비되어 있어 직접적인 후처리가 불필요하지만, 폐수 처리가 불가능한 도심 수로나 격오지 현장에서는 클린텍의 자체 후처리 시스템이 대체 불가능한 친환경 솔루션을 제공합니다.
+                    </blockquote>
                 </div>
-
             </div>
-
         </div>
-      
-    </section> -->
-
-    <!-- <section id="gallery" class="tm-section-pad-top">
-      <div class="container tm-container-gallery">
-        <div class="row">
-          <div class="text-center col-12">
-              <h2 class="tm-text-primary tm-section-title mb-4">Gallery</h2>
-              <p class="mx-auto tm-section-desc">
-                Praesent sed pharetra lorem, blandit convallis mi. Aenean ornare elit ac metus lacinia, sed iaculis nibh semper. Pellentesque est urna, lobortis eu arcu a, aliquet tristique urna.
-              </p>
-          </div>            
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="mx-auto tm-gallery-container">
-                    <div class="grid tm-gallery">
-                      <a href="img/robot.png">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image 1" class="img-fluid">
-                          <figcaption>
-                            <h2><i><span>수중 로봇 준설</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-01.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image 1" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Physical Health <span>Exercise!</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image 2" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Rain on Glass <span>Second Image</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-03.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-03.jpg" alt="Image 3" class="img-fluid">
-                          <figcaption>
-                            <h2><i><span>Sea View</span> Mega City</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-04.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-04.jpg" alt="Image 4" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Dream Girl <span>Thoughts</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-05.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-05.jpg" alt="Image 5" class="img-fluid">
-                          <figcaption>
-                            <h2><i><span>Workstation</span> Offices</i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-06.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-06.jpg" alt="Image 6" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Just Above <span>The City</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-01.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image 7" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Another <span>Exercise Time</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <a href="img/gallery-img-02.jpg">
-                        <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image 8" class="img-fluid">
-                          <figcaption>
-                            <h2><i>Repeated <span>Image Spot</span></i></h2>
-                          </figcaption>
-                        </figure>
-                      </a>
-                    </div>
-                </div>                
-            </div>        
-          </div>
-      </div>
-    </section> -->
-
-    <!-- Contact -->
-    <section id="contact" class="tm-section-pad-top tm-parallax-2">
-    
-      <div class="container tm-container-contact">
-        
-        <div class="row">
-            
-            <div class="text-center col-12">
-                <h2 class="tm-section-title mb-4">Contact Us</h2>
-                <p class="mb-5">
-                  (주)클린텍에 관심을 가져주셔서 감사합니다. </br>
-                  문의사항이나 사업 제휴에 대한 상담은 아래 기재된 연락처로 연락주십시오.</br>
-                  또는 아래의 연락처 양식을 작성해 주시면 최대한 빠른 시일 내에 연락드리겠습니다.</br>
-                  감사합니다.</br>  
-                </p><br>
-            </div>
-            
-            <div class="col-sm-12 col-md-6">
-              <form id="contact-form" action="https://formspree.io/f/xldlpzbz" method="POST">
-                <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
-                <input id="email" name="email" type="email" placeholder="Your Email" class="tm-input" required />
-                <input id="phone" name="phone" type="tel" placeholder="Your Phone" class="tm-input" />
-                <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>
-                <button type="submit" class="btn tm-btn-submit">Submit</button>
-              </form>
-            </div>
-            
-            <div class="col-sm-12 col-md-6">
-
-                <!-- <div class="contact-item">
-                  <a rel="nofollow" href="https://www.tooplate.com/contact" class="item-link">
-                      <i class="far fa-2x fa-comment mr-4"></i>
-                      <span class="mb-0">Chat Online</span>
-                  </a>              
-                </div> -->
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="mailto:chongchon3@gmail.com" class="item-link">
-                      <i class="far fa-2x fa-envelope mr-4"></i>
-                      <span class="mb-0">chongchon3@gmail.com</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="https://map.naver.com/p/directions/-/14098924.402042,4507229.4525253,%EC%9D%B8%EC%B2%9C%EC%82%B0%EC%97%85%EC%9A%A9%ED%92%88%EC%9C%A0%ED%86%B5%EC%84%BC%ED%84%B01%EB%8B%A8%EC%A7%80,16585888,PLACE_POI/-/transit?c=15.00,0,0,0,dh" class="item-link">
-                      <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
-                      <span class="mb-0">인천광역시 동구 방축로37번길 30</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="tel:01030994561" class="item-link">
-                      <i class="fas fa-2x fa-phone-square mr-4"></i>
-                      <span class="mb-0">010-3099-4561</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">&nbsp;</div>
-            
-            </div>
-            
-            
-        </div><!-- row ending -->
-        
-      </div>
-
-      	<footer class="text-center small tm-footer">
-          <p class="mb-0">
-          (주)클린텍 | 조윤한 | 인천광역시 동구 방축로37번길 30 | 사업자등록번호 : 884-86-03321 
-          Copyright &copy; 2020 (주)클린텍. <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates">Designed by TOOPLATE</a></p>
-        </footer>
-
     </section>
-    
-    <script src="js/jquery-1.9.1.min.js"></script>     
-    <script src="slick/slick.min.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/easing.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
-    <script>
 
-      function getOffSet(){
-        var _offset = 450;
-        var windowHeight = window.innerHeight;
+    <!-- Applications / Case Study Section -->
+    <section id="applications" class="applications-section scroll-reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">PROJECT APPLICATIONS</span>
+                <h2 class="section-title">국내 주요 산업 현장 및 공공 적용 실적</h2>
+                <p class="section-intro">대형 공장에서 도심 하천 공원까지, 클린텍의 로봇은 어디서나 작동합니다.</p>
+            </div>
 
-        if(windowHeight > 500) {
-          _offset = 400;
-        } 
-        if(windowHeight > 680) {
-          _offset = 300
-        }
-        if(windowHeight > 830) {
-          _offset = 210;
-        }
+            <div class="app-gallery-grid">
+                <!-- App Item 1 -->
+                <div class="app-item card-glass">
+                    <div class="app-img-box">
+                        <img src="assets/hero_background.png" alt="정유공장 및 제철소 쿨링타워">
+                    </div>
+                    <div class="app-content">
+                        <span class="app-tag">Refinery & Steel Mills</span>
+                        <h3>정유공장 및 제철소 쿨링타워</h3>
+                        <p>24시간 상시 운전해야 하는 냉각탑 수조 바닥의 슬러지를 안전하게 무중단 공정으로 처리하였습니다.</p>
+                    </div>
+                </div>
 
-        return _offset;
-      }
+                <!-- App Item 2 -->
+                <div class="app-item card-glass">
+                    <div class="app-img-box">
+                        <img src="assets/power_plant_intake.png" alt="발전소 취수구 정화">
+                    </div>
+                    <div class="app-content">
+                        <span class="app-tag">Power Plants</span>
+                        <h3>발전소 취수구 정화</h3>
+                        <p>바다 또는 강과 맞닿아 어패류와 토사가 누적되기 쉬운 취수시설 하부를 원격 로봇으로 정밀 준설하였습니다.</p>
+                    </div>
+                </div>
 
-      function setParallaxPosition($doc, multiplier, $object){
-        var offset = getOffSet();
-        var from_top = $doc.scrollTop(),
-          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
-        $object.css({"background-position" : bg_css });
-      }
+                <!-- App Item 3 -->
+                <div class="app-item card-glass">
+                    <div class="app-img-box">
+                        <img src="assets/fire_water_pit.png" alt="소방피트 및 밀폐 수조">
+                    </div>
+                    <div class="app-content">
+                        <span class="app-tag">Infrastructure</span>
+                        <h3>소방용수 피트 및 밀폐 수조</h3>
+                        <p>화재 진압용으로 상시 저수해야 하는 소방피트 내부를 배수 없이 안전하고 완벽하게 침전물을 제거하였습니다.</p>
+                    </div>
+                </div>
 
-      // Parallax function
-      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
-      var background_image_parallax = function($object, multiplier, forceSet){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        // $object.css({"background-attatchment" : "fixed"});
+                <!-- App Item 4 -->
+                <div class="app-item card-glass">
+                    <div class="app-img-box">
+                        <img src="assets/urban_canal.png" alt="청라 커넬워크 등 하천 및 호수공원">
+                    </div>
+                    <div class="app-content">
+                        <span class="app-tag">Urban Canal & Lake Parks</span>
+                        <h3>도심 수변공원 및 호수공원</h3>
+                        <p>청라 커넬워크 및 호수공원 등 시민의 쉼터인 도심 수변 공간의 수질 개선을 위해 친환경 로봇 준설 솔루션을 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        if(forceSet) {
-          setParallaxPosition($doc, multiplier, $object);
-        } else {
-          $(window).scroll(function(){          
-            setParallaxPosition($doc, multiplier, $object);
-          });
-        }
-      };
+    <!-- Consultation Request Form (Contact) -->
+    <section id="contact" class="contact-section scroll-reveal">
+        <div class="container">
+            <div class="contact-box card-glass glow-border-cyan">
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <span class="section-subtitle">CONTACT US</span>
+                        <h2>로봇 준설 관련<br>견적 및 기술 상담</h2>
+                        <p>수중 상태 진단부터 로봇 투입 계획, 후처리 여과 처리까지 정밀 상담을 도와드립니다.</p>
+                        
+                        <div class="contact-meta">
+                            <div class="meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                                <span>대표 전화: <a href="tel:010-3099-4561" class="phone-link" style="color: inherit; text-decoration: none; transition: color 0.2s;">010-3099-4561</a></span>
+                            </div>
+                            <div class="meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                <span>이메일: chongchon3@gmail.com</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                <span>인천광역시 동구 방축로37번길 30</span>
+                            </div>
+                        </div>
+                        <div class="tech-assurance">
+                            <span class="assurance-badge">기술 보증</span>
+                            <p>클린텍은 제타크리젠의 정품 로봇 장비를 도입하여 운용하고 있으며, 철저한 안전 매뉴얼에 따라 준설 공정을 안전하게 이행합니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-panel">
+                        <form id="inquiry-form" class="inquiry-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="comp-name">회사명 / 기관명</label>
+                                    <input type="text" id="comp-name" name="company" placeholder="예: (주)클린에너지" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-name">담당자 이름</label>
+                                    <input type="text" id="client-name" name="name" placeholder="예: 홍길동" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="client-phone">연락처</label>
+                                    <input type="tel" id="client-phone" name="phone" placeholder="예: 010-1234-5678" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-email">이메일 주소</label>
+                                    <input type="email" id="client-email" name="email" placeholder="example@email.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="target-type">대상 수조 형태</label>
+                                <select id="target-type" name="type">
+                                    <option value="cooling-tower">쿨링타워 (냉각탑) 수조</option>
+                                    <option value="wastewater">폐수처리조 / 침전조</option>
+                                    <option value="fire-pit">소방용수 피트 / 밀폐조</option>
+                                    <option value="power-plant">발전소 취수구 / 도수관</option>
+                                    <option value="urban-canal">도심 하천 / 호수공원</option>
+                                    <option value="etc">기타 특수 수조</option>
+                                </select>
+                            </div>
 
-      var background_image_parallax_2 = function($object, multiplier){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        $object.css({"background-attachment" : "fixed"});
-        
-        $(window).scroll(function(){
-          if($(window).width() > 768) {
-            var firstTop = $object.offset().top,
-                pos = $(window).scrollTop(),
-                yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
+                            <div class="form-group">
+                                <label for="message">의뢰 세부내용 (수조 규격, 슬러지 추정 두께 등)</label>
+                                <textarea id="message" name="message" rows="5" placeholder="예: 쿨링타워 수조 규격은 가로 10m x 세로 20m 이며, 퇴적된 슬러지 두께는 약 30cm로 추정됩니다. 무중단 준설 견적이 궁금합니다."></textarea>
+                            </div>
+                            
+                            <div class="form-agreement">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="agree" name="agree" required>
+                                    <span class="custom-checkbox"></span>
+                                    개인정보 수집 및 이용에 동의합니다.
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary btn-block" id="form-submit-btn">상담 및 견적 신청하기</button>
+                        </form>
+                        <div id="form-status" class="form-status-msg hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            var bg_css = 'center ' + yPos + 'px';
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand" style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src="assets/logo.png" alt="주식회사 클린텍 로고" style="height: 40px; width: auto; filter: drop-shadow(0 0 4px rgba(0, 242, 254, 0.15));">
+                        <span class="brand-title" style="margin-bottom: 0;">CLEAN TECH</span>
+                    </div>
+                    <p class="brand-desc">스마트 수중 로봇 준설 및 친환경 여과 기술 전문 기업</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-col">
+                        <h4>TECHNOLOGY</h4>
+                        <a href="#about">로봇 준설 공법</a>
+                        <a href="#filtration">이동식 여과 시스템</a>
+                        <a href="#robots">제타크리젠 라인업</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>APPLICATIONS</h4>
+                        <a href="#applications">정유공장/제철소</a>
+                        <a href="#applications">발전소/소방피트</a>
+                        <a href="#applications">도심 수변공원</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>COMMUNITY</h4>
+                        <a href="https://blog.naver.com/cleantechltd" target="_blank" rel="noopener noreferrer">공식 네이버 블로그</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <div class="company-info">
+                    <span>주식회사 클린텍</span> | <span>사업자등록번호: 884-86-03321</span> | <span>대표자: 조윤한</span><br>
+                    <span>본사: 인천광역시 동구 방축로37번길 30</span> | <span>대표전화: <a href="tel:010-3099-4561" style="color: inherit; text-decoration: none;">010-3099-4561</a></span> | <span>이메일: <a href="mailto:chongchon3@gmail.com" style="color: inherit; text-decoration: none;">chongchon3@gmail.com</a></span>
+                </div>
+                <div class="copyright">
+                    &copy; 2026 주식회사 클린텍. All Rights Reserved. Designed for premium eco-technologies.
+                </div>
+            </div>
+        </div>
+    </footer>
 
-            $object.css({"background-position" : bg_css });
-          } else {
-            $object.css({"background-position" : "center" });
-          }
-        });
-      };
-      
-      $(function(){
-        // Hero Section - Background Parallax
-        background_image_parallax($(".tm-parallax"), 0.30, false);
-        background_image_parallax_2($("#contact"), 0.80);   
-        background_image_parallax_2($("#testimonials"), 0.80);   
-        
-        // Handle window resize
-        window.addEventListener('resize', function(){
-          background_image_parallax($(".tm-parallax"), 0.30, true);
-        }, true);
-
-        // Detect window scroll and update navbar
-        $(window).scroll(function(e){          
-          if($(document).scrollTop() > 120) {
-            $('.tm-navbar').addClass("scroll");
-          } else {
-            $('.tm-navbar').removeClass("scroll");
-          }
-        });
-        
-        // Close mobile menu after click 
-        $('#tmNav a').on('click', function(){
-          $('.navbar-collapse').removeClass('show'); 
-        })
-
-        // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav({
-          'easing': 'easeInOutExpo',
-          'speed': 600,
-          'filter': ':not(.external)'
-        });        
-        
-        // Add smooth scrolling to all links
-        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 600, 'easeInOutExpo', function(){
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-
-        // Pop up
-        $('.tm-gallery').magnificPopup({
-          delegate: 'a',
-          type: 'image',
-          gallery: { enabled: true }
-        });
-
-        $('.tm-testimonials-carousel').slick({
-          dots: true,
-          prevArrow: false,
-          nextArrow: false,
-          infinite: false,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 2
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2
-              }
-            }, 
-            {
-              breakpoint: 480,
-              settings: {
-                  slidesToShow: 1
-              }                 
-            }
-          ]
-        });
-
-        // Gallery
-        $('.tm-gallery').slick({
-          dots: true,
-          infinite: false,
-          slidesToShow: 5,
-          slidesToScroll: 2,
-          responsive: [
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-        });
-      });
-    </script>
-  </body>
+    <!-- Core Script -->
+    <script type="module" src="app.js"></script>
+</body>
 </html>
