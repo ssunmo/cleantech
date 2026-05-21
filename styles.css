@@ -180,6 +180,7 @@ ul {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
     background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
     color: #060911;
     font-weight: 700;
@@ -201,6 +202,7 @@ ul {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.15);
     color: var(--text-main);
@@ -223,6 +225,7 @@ ul {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
     background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
     color: #060911;
     font-weight: 700;
@@ -723,6 +726,7 @@ header.scrolled {
     border-radius: 50px;
     cursor: pointer;
     transition: var(--transition-smooth);
+    white-space: nowrap;
 }
 
 .tab-btn.active {
@@ -1471,6 +1475,26 @@ header.scrolled {
     .robot-tab-content {
         padding: 2rem;
     }
+    
+    .btn-primary, .btn-secondary {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .robot-tab-buttons {
+        flex-wrap: wrap;
+        border-radius: 16px;
+        padding: 0.5rem;
+        gap: 0.5rem;
+        max-width: 500px;
+    }
+    
+    .tab-btn {
+        flex: 1 1 calc(50% - 0.25rem);
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+        border-radius: 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1480,6 +1504,8 @@ header.scrolled {
     }
     .btn-primary, .btn-secondary {
         width: 100%;
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9rem;
     }
     .section-title {
         font-size: 2rem;
