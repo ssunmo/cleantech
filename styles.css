@@ -47,6 +47,8 @@ body {
     line-height: 1.6;
     letter-spacing: -0.02em;
     overflow-x: hidden;
+    word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 img {
@@ -1203,28 +1205,82 @@ header.scrolled {
 
 /* Status Message */
 .form-status-msg {
-    padding: 1rem;
-    border-radius: 6px;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    border-radius: 12px;
     font-size: 0.9rem;
-    text-align: center;
-    margin-top: 1rem;
+    text-align: left;
+    margin-top: 1.5rem;
     transition: var(--transition-smooth);
 }
 
 .form-status-msg.success {
-    background-color: rgba(16, 185, 129, 0.1);
+    background-color: rgba(16, 185, 129, 0.08);
     color: var(--accent-emerald);
     border: 1px solid rgba(16, 185, 129, 0.2);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.05);
 }
 
 .form-status-msg.error {
-    background-color: rgba(239, 68, 68, 0.1);
-    color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.08);
+    color: #f87171;
     border: 1px solid rgba(239, 68, 68, 0.2);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.05);
+}
+
+.form-status-msg .status-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.15rem;
+}
+
+.form-status-msg .status-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.form-status-msg .status-text h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0;
+    color: inherit;
+}
+
+.form-status-msg .status-text p {
+    font-size: 0.825rem;
+    margin: 0;
+    opacity: 0.85;
+    line-height: 1.4;
 }
 
 .hidden {
     display: none;
+}
+
+/* Agreement Error Highlight & Shake */
+.form-agreement.error-highlight .custom-checkbox {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
+    background: rgba(239, 68, 68, 0.05);
+}
+
+.form-agreement.error-highlight .checkbox-label {
+    color: #f87171;
+}
+
+.error-shake {
+    animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
 }
 
 /* ==========================================================================
@@ -1390,6 +1446,14 @@ header.scrolled {
 }
 
 @media (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .about-section, .advantages-section, .robots-section, .filtration-section, .applications-section, .contact-section {
+        padding: 4rem 0 !important;
+    }
+
     .nav-menu {
         display: none; /* Will be toggled by Mobile Menu class */
         position: fixed;
@@ -1425,7 +1489,12 @@ header.scrolled {
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.3;
+    }
+    .hero-desc {
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
     }
     .hero-stats {
         flex-direction: column;
@@ -1438,8 +1507,26 @@ header.scrolled {
         height: 1px;
     }
     
+    .section-title {
+        font-size: 1.85rem;
+        line-height: 1.3;
+    }
+    .section-desc {
+        font-size: 0.95rem;
+    }
+    .section-intro {
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
+    }
+
     .advantages-grid {
         grid-template-columns: 1fr;
+    }
+    .advantage-card {
+        padding: 2rem 1.5rem;
+    }
+    .advantage-card h3 {
+        font-size: 1.2rem;
     }
     
     .app-gallery-grid {
@@ -1498,6 +1585,10 @@ header.scrolled {
 }
 
 @media (max-width: 480px) {
+    .about-section, .advantages-section, .robots-section, .filtration-section, .applications-section, .contact-section {
+        padding: 3rem 0 !important;
+    }
+
     .hero-buttons {
         flex-direction: column;
         width: 100%;
@@ -1507,7 +1598,19 @@ header.scrolled {
         padding: 0.75rem 1.25rem;
         font-size: 0.9rem;
     }
+    .hero-title {
+        font-size: 1.85rem;
+    }
+    .hero-desc {
+        font-size: 0.95rem;
+    }
     .section-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
+    }
+    .robot-tab-content {
+        padding: 1.25rem;
+    }
+    .contact-box {
+        padding: 1.5rem;
     }
 }

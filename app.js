@@ -161,15 +161,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const inquiryForm = document.getElementById('inquiry-form');
     const formStatus = document.getElementById('form-status');
     const submitBtn = document.getElementById('form-submit-btn');
+    const agreeCheckbox = document.getElementById('agree');
+    const agreementContainer = document.querySelector('.form-agreement');
+
+    if (agreeCheckbox) {
+        agreeCheckbox.addEventListener('change', () => {
+            if (agreeCheckbox.checked && agreementContainer) {
+                agreementContainer.classList.remove('error-highlight');
+            }
+        });
+    }
 
     if (inquiryForm) {
         inquiryForm.addEventListener('submit', (e) => {
             e.preventDefault();
 
             // Check Privacy Agreement
-            const agreeCheckbox = document.getElementById('agree');
-            if (!agreeCheckbox.checked) {
-                showStatus('개인정보 수집 및 이용에 동의해주세요.', 'error');
+            if (agreeCheckbox && !agreeCheckbox.checked) {
+                if (agreementContainer) {
+                    agreementContainer.classList.add('error-highlight', 'error-shake');
+                    setTimeout(() => {
+                        agreementContainer.classList.remove('error-shake');
+                    }, 400);
+                }
+                showStatus('상담 진행을 위해 개인정보 수집 및 이용 동의가 필요합니다.', 'error');
                 return;
             }
 
@@ -203,14 +218,14 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .then(response => {
                 if (response.ok) {
-                    showStatus('상담 및 견적 신청이 이메일로 정상 접수되었습니다. 최초 신청 시 기재하신 이메일로 발송되는 FormSubmit 인증 메일을 확인해 주세요!', 'success');
+                    showStatus('상담 신청이 접수되었습니다. 담당자가 기재해 주신 연락처로 신속하고 친절하게 연락드리겠습니다.', 'success');
                     inquiryForm.reset();
                 } else {
-                    showStatus('문의 송신에 실패했습니다. 대표번호(010-3099-4561)로 즉시 연락해 주세요.', 'error');
+                    showStatus('일시적인 오류로 문의 송신에 실패했습니다. 대표번호(010-3099-4561)로 연락해 주시면 바로 안내를 도와드리겠습니다.', 'error');
                 }
             })
             .catch(error => {
-                showStatus('네트워크 통신 중 에러가 발생했습니다: ' + error.message, 'error');
+                showStatus('네트워크 연결이 불안정하여 전송하지 못했습니다. 잠시 후 다시 시도해 주시거나 대표번호(010-3099-4561)로 연락해 주세요.', 'error');
             })
             .finally(() => {
                 submitBtn.disabled = false;
@@ -223,16 +238,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showStatus(message, type) {
-        formStatus.textContent = message;
         formStatus.className = 'form-status-msg'; // Reset classes
         formStatus.classList.add(type);
         formStatus.classList.remove('hidden');
+
+        if (type === 'success') {
+            formStatus.innerHTML = `
+                <div class="status-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" style="color: var(--accent-emerald);"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div class="status-text">
+                    <h4>신청이 완료되었습니다</h4>
+                    <p>${message}</p>
+                </div>
+            `;
+        } else {
+            formStatus.innerHTML = `
+                <div class="status-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" style="color: #ef4444;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                </div>
+                <div class="status-text">
+                    <h4>입력 오류가 발생했습니다</h4>
+                    <p>${message}</p>
+                </div>
+            `;
+        }
 
         // Automatically hide errors after 5 seconds, keep success messages visible
         if (type === 'error') {
             setTimeout(() => {
                 formStatus.classList.add('hidden');
-            }, 5000);
+            }, 6000);
         }
     }
 });
